@@ -1,3 +1,7 @@
+# https://huggingface.co/emilyalsentzer/Bio_ClinicalBERT
+# Boshra
+# 29 August 2025
+
 from transformers import AutoModel, AutoTokenizer, AutoModelForMaskedLM, pipeline
 import torch
 import torch.nn.functional as F
@@ -81,5 +85,5 @@ inputs = tokenizer(text, return_tensors="pt", truncation=True, padding=True)
 outputs = base_model(**inputs)
 
 # Extract embeddings
-last_hidden_state = outputs.last_hidden_state  # shape: (1, seq_len, hidden_dim)
+last_hidden_state = outputs.last_hidden_state  # shape: (1, seq_len, hidden_dim) --> torch.Size([1, 14, 768])
 cls_embedding = last_hidden_state[:, 0, :]     # [CLS] token embedding
