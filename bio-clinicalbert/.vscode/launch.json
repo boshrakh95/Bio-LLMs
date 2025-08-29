@@ -1,0 +1,16 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "Python Debugger: Generate Embed Pretraining",
+            "type": "debugpy",
+            "request": "launch",
+            "program": "${workspaceFolder}/bio-clinicalbert/bio_clinicalbert_demo.py",
+            "console": "integratedTerminal",
+            "cwd": "${workspaceFolder}",
+            "env": {
+                "PYTHONPATH": "${workspaceFolder}"
+            }
+        }
+    ]
+}
