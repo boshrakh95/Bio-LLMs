@@ -145,13 +145,13 @@ if __name__ == "__main__":
     # QA
     context = "Sunitinib is a tyrosine kinase inhibitor used in cancer treatment."
     question = "What does Sunitinib inhibit?"
-    # qa_with_pipeline(model_name, question, context)
-    # qa_manual(model_name, question, context)
+    qa_with_pipeline(model_name, question, context)
+    qa_manual(model_name, question, context)
 
     # Multiple Choice
     mc_question = "What type of drug is Sunitinib?"
     options = ["Antibiotic", "Tyrosine kinase inhibitor", "Beta-blocker"]
-    # multiple_choice_manual(model_name, mc_question, options) # output: antibiotic, which is wrong
+    multiple_choice_manual(model_name, mc_question, options) # output: antibiotic, which is wrong
 
     # Sequence Classification
     seq_classification_manual(model_name, "The patient was diagnosed with diabetes.")
