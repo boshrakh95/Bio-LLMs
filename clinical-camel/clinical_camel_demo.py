@@ -4,7 +4,7 @@
 
 # IMPORTANT NOTE:
 # I couldn't run it because the model is huge and loading it needs downloading multiple 10GB files.
-# The model is ~150 GB in total. You cannot avoid downloading all shards if you want to use the full 70B model.
+# The model is ~150 GB in total. Cannot avoid downloading all shards if you want to use the full 70B model.
 
 from transformers import AutoModelForCausalLM, AutoTokenizer, pipeline
 import torch
